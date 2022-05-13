@@ -1,0 +1,26 @@
+GET http://localhost:5000/users
+###
+GET http://localhost:5000/users/627a81f78ceb10b646c923f0
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "Maharani Putri",
+    "email" : "putrimanikyasa@gmail.com",
+    "gender" : "Female"
+
+}
+###
+PATCH  http://localhost:5000/users/627a7d0d8dedd26fdcf4d138
+Content-Type: application/json
+
+{
+    "name" : "Made Manik Datu Yasa",
+    "email" : "manikyasa@gmail.com",
+    "gender" : "Male"
+
+}
+
+###
+DELETE http://localhost:5000/users/627a81f78ceb10b646c923f0
